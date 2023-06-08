@@ -95,3 +95,12 @@ console.log("La suma es:", parseInt(num1) + parseInt(num2));
 console.log("La Resta es:", num1 - num2);
 console.log("La Multiplicacion es:", num1 * num2);
 console.log("La Division es:", num1 / num2);
+
+// Solicitar al usuario que ingrese la edad
+let edadHumana = parseInt(prompt("Ingrese la edad en años humanos:"));
+
+// Calcular la edad en años perro
+let edadPerro = edadHumana * 7;
+
+// Mostrar el resultado
+alert("La edad equivalente en años perro es: " + edadPerro);

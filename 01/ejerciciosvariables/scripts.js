@@ -68,14 +68,39 @@ alert("La edad equivalente en años perro es: " + edadPerro);
 /* Minutos a segundos
 Crear un programa que pida ingresar una cantidad en minutos mediante un y muestre un mensaje con el resultado de la conversión en segundos. */
 // Solicitar al usuario que ingrese la cantidad de minutos
-let minutes=parsentInt(prompt('Ingrese la cantidad de minutos'))
+let minutes = parseInt(prompt("Ingrese la cantidad de minutos"))
 
 //Calcular los segundos
-conversion = minutes * 60
+seconds = minutes * 60
 //Mostrar resultado
-alert (`La cantidades de: ${minutes} minutos son ${conversion} segundos`) 
+alert (`La cantidades de: ${minutes} minutos equivale a ${seconds} segundos.`) 
 
 /* Días a segundos
 Crear un programa que pida ingresar una cantidad de días y muestre un mensaje con el resultado de la conversión en segundos. */
+//solicitar al usuario que ingrese la cnatidad de dias
+let day = parseInt(prompt("Ingrese el numeros de dias"))
+
+//Calcular de dias a segundos 
+let seconds1 = day * 24 * 60 *60
+
+// Mostramos la conversion 
+alert(`la cantidad de ${day} dias es equivalente a ${seconds1} segundos`)
 /* Kilómetros a millas
 Crear un programa que pida ingresar una cantidad de kilómetros y muestre un mensaje con el resultado de la conversión en millas */
+//solicitar al usuario el nyumero de kilometros
+let kilometres = parseInt(prompt("Ingrese el numero de kilometros"))
+
+//Calcular la conversion
+let millas = kilometres * 0.62
+
+// Mostrar resultados
+alert(`La cantidad de ${kilometres} kilometros es equivaslente a ${millas} millas`)
+
+/* Área de un triangulo
+Crear un programa que pida al usuario ingresar el valor de la base y el valor de la altura de un triangulo, calcular su área y mostrarlo en un mensaje. */
+
+/* Perímetro de un rectángulo
+Crear un programa que pida al usuario ingresar el valor de la altura y el valor del ancho de un rectángulo, calcular su perímetro y mostrarlo en un mensaje. */
+
+/* Porcentaje
+Crear un programa que pida al usuario ingresar un número, y luego el porcentaje que se desea obtener del mismo. Devolver un mensaje muestre el porcentaje de dicho número. */

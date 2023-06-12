@@ -39,10 +39,20 @@ alert(`Nuevo usuario agregado al sistema:***************
 
 //Lista de reproducción 
 /* Crear un programa que pida al usuario ingresar, por separado, el nombre de una playlist y el título de tres canciones, y al finalizar se muestre un mensaje que diga, p. ej.: "Se ha creado la playlist 'Hits de los 80s' con las canciones 'Africa', 'Maniac', 'Final Countdown'".*/
-
+let Playlist = prompt('Ingresar nombre de una playlist')
+let song_1 = prompt('Ingrese su primera cancion patra la lista')
+let song_2 = prompt('Ingrese su primera cancion patra la lista')
+let song_3 = prompt('Ingrese su primera cancion patra la lista')
+alert(`Se ha creado la playlist: ${Playlist}:  con las canciones: ${song_1}, ${song_2}, ${song_3}`)
 //Dirección completa 
 /* Crear un programa que pida al usuario ingresar, por separado, la calle, el número, el departamento, el código postal, la ciudad y el país, y muestre un mensaje con toda la dirección completa, p.ej.: "La dirección que ha ingresado es: Calle Falsa 123 3C, 1414, CABA, Argentina". */
-
+let street = prompt('Ingresar el nombre de la calle')
+let number = prompt('Ingresar el numero de la calle')
+let department = prompt('Ingresar el numero de deprtamento')
+let postal_Code = prompt('Ingresar el codigo postal')
+let city = prompt('Ingresar la cuidad')
+let country = prompt('Ingresar el pais')
+alert(`La direccion que ha ingrasado es: ${street}, ${number}, ${department}, ${postal_Code}, ${city},${country}`)
 
 /* Años perro
 Crear un programa que pida ingresar una edad y devuelva el equivalente de esas edad en años perro. */
@@ -55,3 +65,17 @@ let edadPerro = edadHumana * 7;
 
 // Mostrar el resultado
 alert("La edad equivalente en años perro es: " + edadPerro);
+/* Minutos a segundos
+Crear un programa que pida ingresar una cantidad en minutos mediante un y muestre un mensaje con el resultado de la conversión en segundos. */
+// Solicitar al usuario que ingrese la cantidad de minutos
+let minutes=parsentInt(prompt('Ingrese la cantidad de minutos'))
+
+//Calcular los segundos
+conversion = minutes * 60
+//Mostrar resultado
+alert (`La cantidades de: ${minutes} minutos son ${conversion} segundos`) 
+
+/* Días a segundos
+Crear un programa que pida ingresar una cantidad de días y muestre un mensaje con el resultado de la conversión en segundos. */
+/* Kilómetros a millas
+Crear un programa que pida ingresar una cantidad de kilómetros y muestre un mensaje con el resultado de la conversión en millas */

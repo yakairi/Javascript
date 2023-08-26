@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script src="https://kit.fontawesome.com/45fa939a1d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- Categoria -->
+    <section class="section mt-5 vista" id="vista-categoria">
+        <div class="container">
+          <div class="columns is-multiline">
+            <div class="column is-8-widescreen is-10-desktop is-offset-2-widescreen is-offset-1-desktop">
+              <div class="box">
+                <h2 class="title is-size-2 has-text-weight-bold">Categorías</h2>
+                <label class="label mt-6" for="categoria-input">Nombre</label>
+                <div class="field is-grouped">
+                  <div class="control is-expanded">
+                    <input class="input" type="text" name="" id="categoria-input">
+                  </div>
+                  <div class="control">
+                    <button class="button is-success is-outlined" id="agregar-categoria-boton">
+                      <span class="icon is-small"><i class="fa fa-plus"></i></span>
+                      <span>Agregar</span>
+                    </button>
+                  </div>
+                </div>
+                <div class="mt-6" id="categorias"><div class="mb-3">
+      <div class="columns is-vcentered is-mobile">
+        <div class="column">
+          <span class="tag is-primary is-light">Comida</span>
+        </div>
+        <div class="column is-narrow has-text" p="">
+            <a href="#" class="mr-4 is-size-7 edit-link">Editar</a>
+            <a href="#" class="is-size-7 delete-link">Eliminar</a>
+          <p></p>
+        </div>
+      </div></div><div class="mb-3">
+      <div class="columns is-vcentered is-mobile">
+        <div class="column">
+          <span class="tag is-primary is-light">Servicios</span>
+        </div>
+        <div class="column is-narrow has-text" p="">
+            <a href="#" class="mr-4 is-size-7 edit-link">Editar</a>
+            <a href="#" class="is-size-7 delete-link">Eliminar</a>
+          <p></p>
+        </div>
+      </div></div><div class="mb-3">
+      <div class="columns is-vcentered is-mobile">
+        <div class="column">
+          <span class="tag is-primary is-light">Salidas</span>
+        </div>
+        <div class="column is-narrow has-text" p="">
+            <a href="#" class="mr-4 is-size-7 edit-link">Editar</a>
+            <a href="#" class="is-size-7 delete-link">Eliminar</a>
+          <p></p>
+        </div>
+      </div></div><div class="mb-3">
+      <div class="columns is-vcentered is-mobile">
+        <div class="column">
+          <span class="tag is-primary is-light">Educación</span>
+        </div>
+        <div class="column is-narrow has-text" p="">
+            <a href="#" class="mr-4 is-size-7 edit-link">Editar</a>
+            <a href="#" class="is-size-7 delete-link">Eliminar</a>
+          <p></p>
+        </div>
+      </div></div><div class="mb-3">
+      <div class="columns is-vcentered is-mobile">
+        <div class="column">
+          <span class="tag is-primary is-light">Transporte</span>
+        </div>
+        <div class="column is-narrow has-text" p="">
+            <a href="#" class="mr-4 is-size-7 edit-link">Editar</a>
+            <a href="#" class="is-size-7 delete-link">Eliminar</a>
+          <p></p>
+        </div>
+      </div></div><div class="mb-3">
+      <div class="columns is-vcentered is-mobile">
+        <div class="column">
+          <span class="tag is-primary is-light">Trabajo</span>
+        </div>
+        <div class="column is-narrow has-text" p="">
+            <a href="#" class="mr-4 is-size-7 edit-link">Editar</a>
+            <a href="#" class="is-size-7 delete-link">Eliminar</a>
+          <p></p>
+        </div>
+      </div></div><div class="mb-3">
+      <div class="columns is-vcentered is-mobile">
+        <div class="column">
+          <span class="tag is-primary is-light">Viajes</span>
+        </div>
+        <div class="column is-narrow has-text" p="">
+            <a href="#" class="mr-4 is-size-7 edit-link">Editar</a>
+            <a href="#" class="is-size-7 delete-link">Eliminar</a>
+          <p></p>
+        </div>
+      </div></div><div class="mb-3">
+      <div class="columns is-vcentered is-mobile">
+        <div class="column">
+          <span class="tag is-primary is-light"></span>
+        </div>
+        <div class="column is-narrow has-text" p="">
+            <a href="#" class="mr-4 is-size-7 edit-link">Editar</a>
+            <a href="#" class="is-size-7 delete-link">Eliminar</a>
+          <p></p>
+        </div>
+      </div></div><div class="mb-3">
+      <div class="columns is-vcentered is-mobile">
+        <div class="column">
+          <span class="tag is-primary is-light"></span>
+        </div>
+        <div class="column is-narrow has-text" p="">
+            <a href="#" class="mr-4 is-size-7 edit-link">Editar</a>
+            <a href="#" class="is-size-7 delete-link">Eliminar</a>
+          <p></p>
+        </div>
+      </div></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+<!-- editra categoria -->
+    <section class="section mt-5 is-hidden vista" id="vista-editar-categoria">
+        <div class="container">
+          <div class="columns is-multiline">
+            <div class="column is-8-widescreen is-10-desktop is-offset-2-widescreen is-offset-1-desktop">
+              <div class="box">
+                <h2 class="title is-size-2 has-text-weight-bold">
+                  Editar categoría
+                </h2>
+                <label class="label mt-6" for="editar-categoria-input">Nombre</label>
+                <div class="field is-grouped">
+                  <div class="control is-expanded">
+                    <input class="input" type="text" name="" id="editar-categoria-input">
+                  </div>
+                </div>
+                <div class="buttons mt-6">
+                  <button class="button is-light" id="cancelar-categoria-boton">
+                    Cancelar
+                  </button>
+                  <button class="button is-success" id="editar-categoria-boton">
+                    Editar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+</body>
+</html>
